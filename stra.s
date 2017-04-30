@@ -1,3 +1,8 @@
+	#funcja nie jest jednakowa do tej w C!!
+	#w przypadku podania n=0 ta funkcja wykona i tak 1 przejscie, ta w C nie.
+	#zrobilem tak bo jest wydajniej :>
+	#na kolosie polecam zrobienie sprawdzenia na poczatku i bezwarunkowego skoku na koncu petli
+
 	.type stra, @function #informacja dla debuggera jakby cos nam nie siadlo za 1 razem
 	.globl stra #bez tego linker nie bedzie wiedzial o istnieniu tej fukcji
 stra:

@@ -11,6 +11,7 @@ chngc:
 	#przeniesienie znaku w rejestrze dx (czyli znak startowy) do bufora
 	#konkretnie do adresu znajdujacego sie w rdi, z offsetem rcx, 1 to wielkosc danych
 	#czyli znaczy to takie rdi[rcx] w C, a to 1 bo char, jakby byl int to by bylo 4 itp
+	#jest to po prostu liczba przez jaka mnozony jest offset
 	mov %dx, (%rdi,%rcx,1)
 	inc %rcx #zwiekszenie naszego int i w ramach iteracji bo buforku
 	inc %rdx #zwiekszenie znaku ktorego wpisujemy o 1
